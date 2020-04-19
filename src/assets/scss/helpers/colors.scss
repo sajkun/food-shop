@@ -15,7 +15,7 @@
 }
 
 %white-bg{
-  background: #fff;
+  background: $white;
 }
 
 %title-color{
@@ -31,7 +31,7 @@
 }
 
 %contrast-color{
-  color: #fff;
+  color: $white;
 }
 
 %marked-color-1{
@@ -51,31 +51,3 @@
 }
 
 
-
-.site-header{
-  &__field{
-     @include plh($text-color);
-  }
-}
-
-.menu-trigger{
-
-  @extend %orange-gradient-button;
-
-  &__line-1,
-  &__line-2,
-  &__line-3{
-    @extend %white-bg;
-  }
-
-
-  &.active{
-    @extend %white-bg;
-  }
-
-  &.active &__line-1,
-  &.active &__line-2,
-  &.active &__line-3{
-    @extend %orange-bg;
-  }
-}

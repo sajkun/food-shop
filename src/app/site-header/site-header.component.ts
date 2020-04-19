@@ -11,8 +11,6 @@ export class SiteHeaderComponent implements OnInit {
   // status for expanded or collapsend menu
   showMenu = false
 
-
-
   constructor() { }
 
   ngOnInit(): void {

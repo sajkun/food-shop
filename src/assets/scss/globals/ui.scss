@@ -28,3 +28,40 @@
     }
   }
 }
+
+.arrow-marker{
+  position: absolute;
+  right: 31px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 11px;
+  display: block;
+  transition: all .1s;
+  transform-origin: 50% 50%;
+
+  svg{
+    fill: $orange-1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    transition: all .2s;
+  }
+
+  &.rotated{
+    svg{
+      fill: $dark-background;
+    }
+
+    transform:rotateZ(-90deg);
+  }
+}
+
+[data-expanded="no"] a:hover .arrow-marker{
+  svg{
+    fill: $orange-2;
+  }
+}

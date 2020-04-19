@@ -13,6 +13,8 @@ export class SiteFooterComponent implements OnInit {
     number: '1-800-30-3-33'
   }
 
+  menu = []
+
   constructor() { }
 
   ngOnInit(): void {

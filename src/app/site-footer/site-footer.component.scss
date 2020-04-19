@@ -1,0 +1,71 @@
+@import "./src/assets/scss/helpers/variables.scss";
+@import "./src/assets/scss/helpers/colors.scss";
+@import "./src/assets/scss/helpers/includes.scss";
+@import "./src/assets/scss/helpers/mixins.scss";
+
+
+.site-footer{
+  @extend %dark-bg;
+  padding: 23px 0 27px;
+  height: 100px;
+
+  label{
+    display: block;
+    @extend %text-color;
+    font-size: 22px;
+    line-height: 20px;
+    font-family: $ffa;
+    display: block;
+    margin: 0 0 4px;
+  }
+
+  .phone{
+    text-decoration: none;
+    @extend %marked-color-1;
+    font-size: 27px;
+    line-height: 27px;
+    font-family: $ffs;
+  }
+}
+
+.footer-menu{
+  padding: 0;
+  margin: 6px 0 0;
+
+  &__item{
+    list-style-type: none;
+    display: inline-block;
+
+    a{
+      display: block;
+      // padding:  0 10px;
+      text-decoration: none;
+      @extend %contrast-color;
+      font-size: 22px;
+      font-family: $ffs;
+      line-height: 44px;
+      &:extend{
+
+      }
+
+      &:before{
+        margin: 0 15px;
+        content: '';
+        vertical-align: middle;
+        display: inline-block;
+        width: 1px;
+        height: 44px;
+        background-color: #e8ecf0;
+        opacity: 0.2;
+      }
+    }
+
+    &:first-child{
+      a{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+}

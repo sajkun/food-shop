@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+     <div class="col-12 col-md-6">
+       <label>{{phone.label}}</label>
+       <a href="tel:1-800-30-3-33" class="phone">{{phone.number}}</a>
+     </div>
+     <div class="col-12 col-md-6 ">
+        <nav class="footer-menu-holder text-left">
+          <ul class="footer-menu">
+            <li class="footer-menu__item" *ngFor="let item of menu"><a href="">{{item.text}}</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</footer><!-- site-footer -->

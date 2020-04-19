@@ -1,0 +1,30 @@
+.button{
+  display: inline-block;
+  text-decoration: none;
+  transition: all .1s;
+
+  @extend %orange-gradient-button;
+  @extend %contrast-color;
+
+  &__half{
+    width: 50%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 22px;
+
+    &:nth-child(1){
+      border-radius: 0 25px 25px 0;
+    }
+
+    &:nth-child(2){
+      border-radius: 25px 0 0 25px;
+    }
+
+    &:active,
+    &.active{
+      @extend %marked-color-1;
+      @extend %white-bg;
+    }
+  }
+}
